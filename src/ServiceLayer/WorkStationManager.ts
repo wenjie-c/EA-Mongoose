@@ -51,7 +51,7 @@ export async function ListAll(){
 
 export async function Close() {
     await cnx.disconnect();
-    console.log("Disconnecting drom MongoDB");
+    console.log("Disconnecting from MongoDB");
 }
 export async function Clear() {
     await UserModel.deleteMany({});
