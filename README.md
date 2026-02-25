@@ -1,41 +1,18 @@
-# EA Node.js + TypeScript + Mongoose
+# Ejercicio Typescript + MongoDB
 
-## Requisitos Previos
-
-Asegúrate de tener instalados los siguientes programas en tu sistema:
-
-- [Node.js](https://nodejs.org/) (versión 14.x o superior)
-- [MongoDB](https://www.mongodb.com/) (puede ser local o en la nube a través de MongoDB Atlas)
-- [npm](https://www.npmjs.com/) 
-- [TS] TypeScript
-
-Instalar TypeScript
+Para este ejercicio he creado un subdirectorio para la capa de servicio en la que contiene las operaciones CRUD `WorkStationManager.ts` y el modelo `WorkStation.ts`.
+```mermaid
+classDiagram
+class WorkStation{
+    + _id: string
+    + userId: string
+    + num: number
+}
 ```
-npm install -g typescript
-```
+A parte de eso, para saber que lo he hecho bien he escrito la función `ServiceLayerTest()` en `mongoose.ts`.
 
-## Clonar el proyecto
-
-```
-git clone https://github.com/rocmeseguer/EA-Mongoose
-cd EA-Mongoose
-```
-
-## Dependencias del proyecto
-
-Instalar Mongoose y otras dependencias
-```
-npm install
-```
-
-## Complilación y ejecución
-
-Transpilar de TS a JS
-```
-tsc 
-```
-
-Ejecutar JS
-```
-node dist/mongoogse.js
-```
+## Test
+1. Transpilalo a javascript:
+`tsc`
+2. Ejecuta con NodeJs:
+`node dist/mongoose.js`
