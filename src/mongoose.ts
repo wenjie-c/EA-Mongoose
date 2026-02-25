@@ -128,7 +128,7 @@ async function ServiceLayerTest() {
       console.log(element);
     });
   }
-
+0
   const user1 = new UserModel({
     name: 'Bulma',
     email: 'bulma@gmail.com',
@@ -170,7 +170,7 @@ async function ServiceLayerTest() {
   console.log('--------------------------------------');
 
   console.log(`Deleting member workstation: ${user3.name}`);
-  Delete(ws2._id);
+  await Delete(ws2._id);
 
   let all2 = await ListAll();
   console.log(`Listing all member's workstation of the ${organizationA.name} :`);
