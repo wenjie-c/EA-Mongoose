@@ -177,7 +177,7 @@ async function ServiceLayerTest() {
   print(all2);
   console.log('--------------------------------------');
 
-  Update(user2._id, {num: 41});
+  await Update(ws1._id, {num: 41});
   let all3 = await ListAll();
   console.log(`Listing all member's workstation of the ${organizationA.name} :`);
   print(all3);
